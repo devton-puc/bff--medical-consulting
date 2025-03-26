@@ -121,8 +121,8 @@ Este comando executa todas as aplicações.
 
 # Importante:
 
-- É necessário que o projeto api--patient esteja no mesmo diretório. 
-- Não rode o docker-compose.yaml do projeto api--patient, para evitar conflito de portas do mysql.
+- É necessário que os projetos api--patient e api--appointment estejam no mesmo diretório. 
+- Não rode o docker-compose.yaml do projeto api--patient e(ou) api--appointment, para evitar conflito de portas do mysql.
 
 
 ## Documentação OpenAPI
