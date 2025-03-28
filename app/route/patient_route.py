@@ -1,6 +1,6 @@
 from flask import jsonify
 
-from logger import logger
+from app.logger import logger
 from app.route import patient_tag, zipcode_tag
 from app.schemas import PatientSaveSchema, PatientViewSchema
 from app.schemas.patient import ListPatientViewSchema, IdPatientPathSchema

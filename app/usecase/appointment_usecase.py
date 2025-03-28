@@ -1,6 +1,6 @@
 import requests
 
-from logger import logger
+from app.logger import logger
 from app.schemas.appointment import AppointmentSaveSchema, ListAppointmentViewSchema, AppointmentViewSchema
 from app.schemas.appointment_filter import AppointmentFilterSchema
 from app.schemas.status import StatusResponseSchema
