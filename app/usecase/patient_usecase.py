@@ -4,7 +4,6 @@ from app.schemas.patient import PatientSaveSchema, ListPatientViewSchema, Patien
 from app.schemas.patient_filter import PatientFilterSchema
 from app.schemas.status import StatusResponseSchema
 from app.schemas.address import AddressSchema
-
 from app.usecase import API_PATIENT_URL
 
 

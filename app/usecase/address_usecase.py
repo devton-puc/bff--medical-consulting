@@ -2,8 +2,8 @@ import requests
 
 from app.schemas.address import AddressZipCodeSchema
 from app.schemas.status import StatusResponseSchema
-
 from app.usecase import VIACEP_API_URL
+from app.logs.logger import logger
 
 class AddressUseCase:
 
