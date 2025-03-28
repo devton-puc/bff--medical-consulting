@@ -30,7 +30,6 @@ class ListAppointmentViewSchema(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-
 class IdAppointmentPathSchema(BaseModel):
     id_appointment: int
     model_config = ConfigDict(from_attributes=True)
