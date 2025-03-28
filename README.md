@@ -106,6 +106,8 @@ docker run --name bff--medical-consulting \
     -p 5000:5000 \
     -e VIACEP_API_URL=<URL DO VIA CEP> \
     -e API_PATIENT_URL=<URL DA API-PATIENT> \
+    -e API_APPOINTMENT_URL=<URL DA API-APPOINTMENT> \
+
     bff--medical-consulting:latest
 ```
 
