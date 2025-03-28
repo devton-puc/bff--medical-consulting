@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="api--patinent",
+    name="bff--medical-consulting",
     version="1.0.0",
     packages=find_packages(exclude=["tests", "tests.*"]),
     python_requires=">=3.11",
