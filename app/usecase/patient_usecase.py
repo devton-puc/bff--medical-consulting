@@ -81,4 +81,19 @@ class PatientUseCase:
         except Exception as error:
             return StatusResponseSchema(code=500, message="Erro ao obter o paciente", details=f"{error}")
 
+    def get_patient_personal_id(self, personal_id: str) -> PatientViewSchema | StatusResponseSchema:
+ 
+        try:
+            
+            response = requests.get(f'{API_PATIENT_URL}/patient/personal-id/{personal_id}')
+            patient_data = response.json()
+            if response.status_code != 200:
+                return StatusResponseSchema.model_validate(patient_data)
+            
+            return PatientViewSchema.model_validate(patient_data)
+
+        except Exception as error:
+            return StatusResponseSchema(code=500, message="Erro ao obter o paciente", details=f"{error}")
+
+
 

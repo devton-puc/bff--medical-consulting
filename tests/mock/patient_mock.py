@@ -13,6 +13,7 @@ def mock_list_patients_success():
         patients=[PatientViewSchema(
             id=1,
             name="John Doe",
+            personal_id="12345678900",
             email="john.doe@example.com",
             phone="123456789",
             gender="Masculino",
@@ -55,6 +56,7 @@ def mock_get_patient_success():
     mock.return_value = PatientViewSchema(
         id=1,
         name="John Doe",
+        personal_id="12345678900",
         email="john.doe@example.com",
         phone="123456789",
         gender="Masculino",

@@ -32,7 +32,8 @@ class TestPatientUseCase:
                     "gender": "female",
                     "id": 1,
                     "name": "Joana Dark",
-                    "phone": "2133448866"
+                    "phone": "2133448866",
+                    "personal_id": "12345678900"
                 }
             ],
             "per_page": 5,
@@ -97,6 +98,7 @@ class TestPatientUseCase:
 
         patient_data = PatientSaveSchema(
             name="John Doe",
+            personal_id="12345678900",
             email="john.doe@example.com",
             phone="123456789",
             gender="male",
@@ -126,6 +128,7 @@ class TestPatientUseCase:
 
         patient_data = PatientSaveSchema(
             name="John Doe",
+            personal_id="12345678900",
             email="john.doe@example.com",
             phone="123456789",
             gender="male",
@@ -155,6 +158,7 @@ class TestPatientUseCase:
 
         patient_data = PatientSaveSchema(
             name="Jane Doe",
+            personal_id="12345678900",
             email="jane.doe@example.com",
             phone="987654321",
             gender="female",
@@ -184,6 +188,7 @@ class TestPatientUseCase:
 
         patient_data = PatientSaveSchema(
             name="Jane Doe",
+            personal_id="12345678900",
             email="jane.doe@example.com",
             phone="987654321",
             gender="female",
@@ -214,6 +219,7 @@ class TestPatientUseCase:
 
         patient_data = PatientSaveSchema(
             name="Jane Doe",
+            personal_id="12345678900",
             email="jane.doe@example.com",
             phone="987654321",
             gender="female",
@@ -231,6 +237,7 @@ class TestPatientUseCase:
         mock_patient = {
             "id": 1,
             "name": "John Doe",
+            "personal_id": "12345678900",
             "email": "john.doe@example.com",
             "phone": "123456789",
             "gender": "male",

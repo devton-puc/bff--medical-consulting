@@ -74,10 +74,27 @@ class TestPatientRoute:
             response = client.get("/bff/patient/1")
             assert response.status_code == 500
 
+    def test_should_return_http200_get_patient_personal_id_when_success(self, client):
+        with patch("app.usecase.patient_usecase.PatientUseCase.get_patient_personal_id", mock_get_patient_success()):
+            response = client.get("/bff/patient/personal-id/12345678900")
+            assert response.status_code == 200
+            assert 'id' in response.json
+
+    def test_should_return_http404_get_patient_personal_id_when_not_found(self, client):
+        with patch("app.usecase.patient_usecase.PatientUseCase.get_patient_personal_id", mock_get_patient_failure_404()):
+            response = client.get("/bff/patient/personal-id/12345678900")
+            assert response.status_code == 404
+
+    def test_should_return_http500_get_patient_personal_id_when_error(self, client):
+        with patch("app.usecase.patient_usecase.PatientUseCase.get_patient_personal_id", mock_get_patient_failure_500()):
+            response = client.get("/bff/patient/personal-id/12345678900")
+            assert response.status_code == 500
+
     def test_should_return_http200_create_patient_when_success(self, client):
         with patch("app.usecase.patient_usecase.PatientUseCase.create_patient", mock_create_patient_success()):
             new_patient = {
                 "name": "Joana Dark",
+                "personal_id": "12345678900",
                 "birth_date": "22/02/1990",
                 "email": "joana.dark@email.com",
                 "phone": "2133448866",
@@ -98,6 +115,7 @@ class TestPatientRoute:
         with patch("app.usecase.patient_usecase.PatientUseCase.create_patient", mock_create_patient_failure_500()):
             new_patient = {
                 "name": "Joana Dark",
+                "personal_id": "12345678900",
                 "birth_date": "22/02/1990",
                 "email": "joana.dark@email.com",
                 "phone": "2133448866",
@@ -118,6 +136,7 @@ class TestPatientRoute:
         with patch("app.usecase.patient_usecase.PatientUseCase.update_patient", mock_update_patient_failure_404()):
             updated_patient = {
                 "name": "updated_name",
+                "personal_id": "12345678900",
                 "email": "updated@example.com",
                 "phone": "updated_phone",
                 "gender": "string",
@@ -138,6 +157,7 @@ class TestPatientRoute:
         with patch("app.usecase.patient_usecase.PatientUseCase.update_patient", mock_update_patient_failure_500()):
             updated_patient = {
                 "name": "updated_name",
+                "personal_id": "12345678900",
                 "email": "updated@example.com",
                 "phone": "updated_phone",
                 "gender": "string",

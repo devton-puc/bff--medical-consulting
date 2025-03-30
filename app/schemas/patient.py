@@ -10,6 +10,7 @@ class PatientSaveSchema(BaseModel):
     Define os Dados do Paciente para Criação/Alteração
     """
     name: str
+    personal_id: str
     email: EmailStr
     phone: str
     gender: str
@@ -24,6 +25,7 @@ class PatientViewSchema(BaseModel):
     Define os Dados do Paciente para visualização
     """
     id: int
+    personal_id: str
     name: str
     email: EmailStr
     phone: str
@@ -51,5 +53,14 @@ class IdPatientPathSchema(BaseModel):
     Define objeto de busca
     """
     id_patient: int
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class PersonalIdPathSchema(BaseModel):
+    """
+    Define objeto de busca
+    """
+    personal_id: str
 
     model_config = ConfigDict(from_attributes=True)

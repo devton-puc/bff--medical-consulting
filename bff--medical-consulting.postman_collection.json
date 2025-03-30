@@ -155,6 +155,29 @@
 						"description": "Generated from cURL: curl -X DELETE http://localhost:5000/customers/1\r\n"
 					},
 					"response": []
+				},
+				{
+					"name": "/patient/personal-id/12345678900",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/bff/patient/personal-id/12345678900",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"bff",
+								"patient",
+								"personal-id",
+								"12345678900"
+							]
+						},
+						"description": "Generated from cURL: curl -X DELETE http://localhost:5000/customers/1\r\n"
+					},
+					"response": []
 				}
 			]
 		},
