@@ -16,7 +16,7 @@ Este projeto é uma aplicação back-end for front-end desenvolvida com Python U
 - **Alteração de Consultas médicas**: Permite alterar as informações dos Consultas médicas existentes.
 - **Busca de Consultas médicas**: Busca as informações dos Consultas existentes para edição.
 - **Exclusão de Consultas médicas**: Permite excluir Consultas médicas do banco de dados.
-- **Visualização de Consultas médicas**: Lista todos os Consultas filtrando por sintomas.
+- **Visualização de Consultas médicas**: Lista todos os Consultas filtrando por id do paciente.
 - **Busca de Cep**: Permite Consultar os dados de endereço, informando o CEP.
 
 ## Tecnologias Utilizadas

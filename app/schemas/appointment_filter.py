@@ -9,6 +9,6 @@ class AppointmentFilterSchema(BaseModel):
     """
     per_page: int
     page: int
-    symptoms: Optional[str] = None
+    patient_id: int
 
     model_config = ConfigDict(from_attributes=True)

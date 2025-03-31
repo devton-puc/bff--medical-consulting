@@ -81,7 +81,7 @@ class TestAppointmentUseCase:
         filter_data = AppointmentFilterSchema(
             page=1,
             per_page=5,
-            name=""
+            patient_id=1
         )
         result = usecase_mock.list_appointments(filter_data)
         assert isinstance(result, ListAppointmentViewSchema)
@@ -95,7 +95,7 @@ class TestAppointmentUseCase:
         filter_data = AppointmentFilterSchema(
             page=1,
             per_page=5,
-            symptoms=""
+            patient_id=1
         )
         result = usecase_mock.list_appointments(filter_data)
         assert isinstance(result, StatusResponseSchema)
@@ -111,7 +111,7 @@ class TestAppointmentUseCase:
         filter_data = AppointmentFilterSchema(
             page=1,
             per_page=5,
-            symptoms=""
+            patient_id=1
         )
         result = usecase_mock.list_appointments(filter_data)
         assert isinstance(result, StatusResponseSchema)

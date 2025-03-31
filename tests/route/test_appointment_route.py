@@ -32,7 +32,7 @@ class TestAppointmentRoute:
             filter_data = {
                 "page": 1,
                 "per_page": 5,
-                "symptoms": "febre"
+                "patient_id": 1
             }
             response = client.post("/bff/appointment/list", json=filter_data)
             assert response.status_code == 200
@@ -43,7 +43,7 @@ class TestAppointmentRoute:
             filter_data = {
                 "page": 1,
                 "per_page": 5,
-                "symptoms": "febre"
+                "patient_id": 1
             }
             response = client.post("/bff/appointment/list", json=filter_data)
             assert response.status_code == 204
@@ -53,7 +53,7 @@ class TestAppointmentRoute:
             filter_data = {
                 "page": 1,
                 "per_page": 5,
-                "symptoms": "febre"
+                "patient_id": 1
             }
             response = client.post("/bff/appointment/list", json=filter_data)
             assert response.status_code == 500

@@ -22,12 +22,11 @@ class AppointmentRoute:
                       500: StatusResponseSchema
                   })
         def list_appointments_route(body: AppointmentFilterSchema):
-            """Lista os pacientes cadastrados filtrando pelo sintoma."""
-            logger.debug(f"Consultando consulta: Buscando por [{body.symptoms}]")
+            """Lista os pacientes cadastrados filtrando pelo id do paciente."""
+            logger.debug(f"Consultando consulta: Buscando por [{body.patient_id}]")
             response = self.usecase.list_appointments(body)
-            print(f"response: {response}")
             if isinstance(response, ListAppointmentViewSchema):
-                logger.debug(f"Consultando a consulta [{body.symptoms}]: Dados retornados")
+                logger.debug(f"Consultando a consulta [{body.patient_id}]: Dados retornados")
                 return jsonify(response.model_dump()), 200
             else:
                 logger.debug(

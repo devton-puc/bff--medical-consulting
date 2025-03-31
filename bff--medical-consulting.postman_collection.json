@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Maria Dark\",\r\n  \"birth_date\": \"22/02/1990\",\r\n  \"email\": \"maria.dark@email.com\",\r\n  \"phone\": \"2133448866\",\r\n  \"gender\": \"female\",\r\n  \"address\": {\r\n        \"zipcode\": \"12345\",\r\n        \"address\": \"123 Main St\",\r\n        \"neighborhood\": \"Central\",\r\n        \"city\": \"Springfield\",\r\n        \"state\": \"IL\",\r\n        \"number\": \"10\"\r\n    }\r\n}",
+							"raw": "{\r\n  \"name\": \"Joana Moreira\",\r\n  \"birth_date\": \"22/02/1970\",\r\n  \"email\": \"joana.moreira@email.com\",\r\n  \"personal_id\": \"1234454544\",\r\n  \"phone\": \"299448866\",\r\n  \"gender\": \"female\",\r\n  \"address\": {\r\n        \"zipcode\": \"223322\",\r\n        \"address\": \"123 Main St\",\r\n        \"neighborhood\": \"Central\",\r\n        \"city\": \"Springfield\",\r\n        \"state\": \"IL\",\r\n        \"number\": \"20\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -232,7 +232,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"page\": 1,\n    \"per_page\": 5,\n    \"symptoms\": \"\"\n}",
+							"raw": "{\n    \"page\": 1,\n    \"per_page\": 5,\n    \"patient_id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
