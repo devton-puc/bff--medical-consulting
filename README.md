@@ -114,7 +114,15 @@ docker run --name bff--medical-consulting \
     bff--medical-consulting:latest
 ```
 
-# Rodando via docker-compose
+# Rodando via do    depends_on:
+
+Configure a chave da api key do gemini no service api-apointment no docker-compose.yaml:
+
+```
+    environment:
+        ...
+      - GEMINI_TOKEN=<SUA API KEY>cker-compose
+```
 
 Para rodar via docker-compose, efetue um comando abaixo:
 

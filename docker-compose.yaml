@@ -58,6 +58,7 @@ services:
       - DB_PORT=3306
       - DB_USER=root
       - DB_PASSWORD=password
+      - GEMINI_TOKEN=<SUA API KEY>
     ports:
       - "4000:5000"
     healthcheck:
