@@ -64,7 +64,9 @@ API_APPOINTMENT_URL=http://localhost:4000
 
 ## Rodando a aplicação
 
-Para executar a API  basta executar:
+Execute os projetos api--patient e api--appointment
+
+Para executar a API basta executar:
 
 ```
 (env)$ flask run --host 0.0.0.0 --port 5000
@@ -88,9 +90,10 @@ o projeto e em seguida executar o comando abaixo:
 
 ## Rodando via Docker (Precisa ter o Docker Instalado)
 
-Importante: Execute o projeto api--patient antes de executar
-esta api. Lembrando que o docker-compose contido no projeto mencionado
-deverá ser iniciado.
+Importante: Execute o projeto api--patient e api--apointment via docker antes de executar esta api. 
+
+Neste cenário, precisa ter iniciado o mysql em um dos docker-compose contido
+nos projetos indicados acima.
 
 Execute o comando para gerar a imagem via Docker
 
