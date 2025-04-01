@@ -114,7 +114,7 @@ docker run --name bff--medical-consulting \
     bff--medical-consulting:latest
 ```
 
-# Rodando via do    depends_on:
+# Rodando via docker-compose:
 
 Configure a chave da api key do gemini no service api-apointment no docker-compose.yaml:
 
