@@ -96,6 +96,8 @@ services:
 volumes:
   my-db:
 
+  
 networks:
   medical-network:
+    name: medical-network
     driver: bridge
