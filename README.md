@@ -1,4 +1,4 @@
-# BFF Medical Consulting (Customer) - Projeto MVP
+# BFF Medical Consulting (Back End For Front End) - Projeto MVP
 
 Projeto MVP para disciplina **Desenvolvimento Full Stack Avançado** 
 
