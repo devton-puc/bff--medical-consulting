@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "db2cf1bf-0460-4f8a-947f-44b73be00889",
+		"name": "viacep-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17710409"
+	},
+	"item": [
+		{
+			"name": "https://viacep.com.br/ws/29025000/json/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://viacep.com.br/ws/20930040/json/",
+					"protocol": "https",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"20930040",
+						"json",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://viacep.com.br/ws/29025000/json/'"
+			},
+			"response": []
+		}
+	]
+}
