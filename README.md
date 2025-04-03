@@ -147,7 +147,9 @@ A documentação OpenAPI da API está disponível em:
 
 ## POSTMAN
 
-Para executar, importe as collections do postman 
+Para executar, importe as collections do postman
+
+Segue também a collection da api externa utilizada.
 
 ```
 bff--medical-consulting.postman_collection.json
