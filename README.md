@@ -151,6 +151,8 @@ Para executar, importe as collections do postman
 
 ```
 bff--medical-consulting.postman_collection.json
+
+viacep-api.postman_collection.json
 ```
 
 ## Autor
