@@ -21,7 +21,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Mario Moreira\",\r\n  \"birth_date\": \"22/02/1970\",\r\n  \"email\": \"mario.moreira@email.com\",\r\n  \"personal_id\": \"1234454544\",\r\n  \"phone\": \"299448866\",\r\n  \"gender\": \"female\",\r\n  \"address\": {\r\n        \"zipcode\": \"223322\",\r\n        \"address\": \"123 Main St\",\r\n        \"neighborhood\": \"Central\",\r\n        \"city\": \"Springfield\",\r\n        \"state\": \"IL\",\r\n        \"number\": \"20\"\r\n    }\r\n}",
+							"raw": "{\r\n  \"name\": \"Mario Moreira\",\r\n  \"birth_date\": \"2000-02-02\",\r\n  \"email\": \"mario.moreira@email.com\",\r\n  \"personal_id\": \"1234454544\",\r\n  \"phone\": \"299448866\",\r\n  \"gender\": \"female\",\r\n  \"address\": {\r\n        \"zipcode\": \"223322\",\r\n        \"address\": \"123 Main St\",\r\n        \"neighborhood\": \"Central\",\r\n        \"city\": \"Springfield\",\r\n        \"state\": \"IL\",\r\n        \"number\": \"20\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -88,7 +88,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"address\": {\r\n        \"address\": \"123 Main St\",\r\n        \"city\": \"California\",\r\n        \"neighborhood\": \"Central\",\r\n        \"number\": \"10\",\r\n        \"state\": \"IL\",\r\n        \"zipcode\": \"12345\"\r\n    },\r\n    \"birth_date\": \"12/09/2000\",\r\n    \"email\": \"maria.cabrera@email.com\",\r\n    \"name\": \"Maria Cabrera\",\r\n    \"phone\": \"2133998866\",\r\n    \"personal_id\": \"12345678922\",\r\n    \"gender\": \"feminino\"\r\n}",
+							"raw": "{\r\n    \"address\": {\r\n        \"address\": \"123 Main St\",\r\n        \"city\": \"California\",\r\n        \"neighborhood\": \"Central\",\r\n        \"number\": \"10\",\r\n        \"state\": \"IL\",\r\n        \"zipcode\": \"12345\"\r\n    },\r\n    \"birth_date\": \"2000-02-02\",\r\n    \"email\": \"maria.cabrera@email.com\",\r\n    \"name\": \"Maria Cabrera\",\r\n    \"phone\": \"2133998866\",\r\n    \"personal_id\": \"12345678922\",\r\n    \"gender\": \"feminino\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -96,7 +96,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/bff/patient/21",
+							"raw": "http://localhost:5000/bff/patient/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -105,7 +105,7 @@
 							"path": [
 								"bff",
 								"patient",
-								"21"
+								"1"
 							]
 						},
 						"description": "Generated from cURL: curl -X PUT http://localhost:5000/customers/1 \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\r\n  \"name\": \"John Smith\",\r\n  \"email\": \"john.smith@example.com\",\r\n  \"age\": 31\r\n}'\r\n"
@@ -268,7 +268,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"patient_id\": 1,\n    \"doctor_crm\": \"123456\",\n    \"date_time\": \"2025-03-30T20:20:00\",\n    \"symptoms\": \"dor de cabeca. A pessoa tem 20 anos.\",\n    \"medications\": [\n        {\n            \"dosage\": \"750mg\",\n            \"instructions\": \"1 comprimido, a cada 6 horas, por 3 dias.\",\n            \"name\": \"Paracetamol\"\n        },\n        {\n            \"dosage\": \"500mg\",\n            \"instructions\": \"1 comprimido, a cada 8 horas, por 3 dias.\",\n            \"name\": \"Dipirona\"\n        }\n    ]\n}",
+							"raw": "{\n    \"patient_id\": 1,\n    \"doctor_crm\": \"123456\",\n    \"date_time\": \"2025-03-30T20:20\",\n    \"symptoms\": \"dor de cabeca. A pessoa tem 20 anos.\",\n    \"medications\": [\n        {\n            \"dosage\": \"750mg\",\n            \"instructions\": \"1 comprimido, a cada 6 horas, por 3 dias.\",\n            \"name\": \"Paracetamol\"\n        },\n        {\n            \"dosage\": \"500mg\",\n            \"instructions\": \"1 comprimido, a cada 8 horas, por 3 dias.\",\n            \"name\": \"Dipirona\"\n        }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
